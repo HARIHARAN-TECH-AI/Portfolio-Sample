@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Certifications</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f3f5;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .certifications {
+            list-style-type: none;
+            padding: 0;
+        }
+        .certification {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #3498db;
+        }
+        .certification:nth-child(3n+1) {
+            border-left-color: #e74c3c;
+        }
+        .certification:nth-child(3n+2) {
+            border-left-color: #2ecc71;
+        }
+        .certification:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .certification h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.4em;
+        }
+        .certification p {
+            margin-bottom: 10px;
+        }
+        .certification .date {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        .certification .issuer {
+            font-weight: bold;
+            color: #34495e;
+        }
+        .certification::before {
+            content: '🏆';
+            font-size: 1.5em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        @media (max-width: 600px) {
+            .certification {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>My Certifications</h2>
+    <ul class="certifications">
+        <li class="certification">
+            <h3>Web Development Fundamentals</h3>
+            <p class="issuer">Issuer: FreeCodeCamp</p>
+            <p>A comprehensive course covering HTML, CSS, and JavaScript basics.</p>
+            <p class="date">Issued: June 2023</p>
+        </li>
+        <li class="certification">
+            <h3>React.js Advanced Concepts</h3>
+            <p class="issuer">Issuer: Udemy</p>
+            <p>In-depth study of React hooks, context API, and performance optimization.</p>
+            <p class="date">Issued: August 2023</p>
+        </li>
+        <li class="certification">
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <p class="issuer">Issuer: Amazon Web Services</p>
+            <p>Foundational understanding of AWS Cloud services and their applications.</p>
+            <p class="date">Issued: October 2023</p>
+        </li>
+    </ul>
+</body>
+</html>
+
